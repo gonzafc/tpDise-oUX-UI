@@ -1,0 +1,173 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Romero | Contacto</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Estilos específicos para la página de Contacto -->
+    <style>
+        .contact-main {
+            padding: 50px 0;
+            min-height: 80vh;
+        }
+        .contact-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 42px;
+            color: #00FFFF;
+            text-align: center;
+            border-bottom: 2px solid #292929;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* 1 parte para links, 2 partes para escribir */
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        /* Contenedor de Links y Redes */
+        .contact-links {
+            background-color: #292929;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #00FFFF;
+        }
+        .contact-links h3 {
+            color: #FFFFFF;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        /* Clase para Links/Items de Contacto (incluye el nuevo item de texto) */
+        .contact-link-item, .contact-info-item {
+            display: block;
+            margin-bottom: 25px;
+            color: #CCCCCC;
+            font-size: 18px;
+            /* Transiciones solo para los enlaces */
+            transition: color 0.3s, transform 0.2s;
+        }
+        .contact-link-item:hover {
+            color: #00FFFF;
+            transform: translateX(5px);
+        }
+        /* Reset para el item de información de texto (no tiene hover de link) */
+        .contact-info-item {
+            cursor: default;
+            transition: none;
+            transform: none;
+        }
+
+        .contact-link-item .fas, .contact-link-item .fab,
+        .contact-info-item .fas, .contact-info-item .fab {
+            margin-right: 15px;
+            font-size: 24px;
+            width: 30px; /* Asegura alineación */
+            text-align: center;
+            color: #00FFFF; /* Color Cian fijo para los íconos */
+        }
+
+        /* Área de Mensaje Personal */
+        .personal-message-area {
+            background-color: #292929;
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            border-right: 5px solid #00FFFF; /* Nuevo borde para destacar la caja */
+        }
+        .personal-message-area h3 {
+            color: #00FFFF;
+            font-family: 'Roboto Slab', serif;
+            font-size: 30px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        .personal-message-area p {
+            color: #CCCCCC;
+            font-size: 18px; /* Texto más grande para el mensaje */
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+
+        /* Responsive para dispositivos pequeños */
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr; /* Una sola columna en móvil */
+            }
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="grid-container">
+            <nav>
+                <section class="nav-logo-container">
+                    <a href="/index.html">GONZALO ROMERO</a>
+                </section>
+                <section class="menu-links">
+                    <a href="/index.html">Inicio</a>
+                    <a href="/experiencia.html">Experiencia</a>
+                    <a href="/sobreMi.html">Sobre Mí</a>
+                    <a href="/contacto.html" style="color: #00FFFF; border-bottom: 2px solid #00FFFF;">Contacto</a>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="grid-container">
+            <h1 class="contact-title">¡Hablemos! Conéctate Conmigo.</h1>
+
+            <div class="contact-container">
+                <!-- COLUMNA IZQUIERDA: OPCIONES DE CONTACTO -->
+                <section class="contact-links">
+                    <h3>Contactos Directos</h3>
+                    
+                    <!-- Opción 1: Correo Electrónico -->
+                    <p class="contact-info-item">
+                        <span class="fas fa-envelope"></span>romerogonzalo32@gmail.com
+                    </p>
+                    
+                    <!-- Opción 2: LinkedIn -->
+                    <a href="https://www.linkedin.com/in/gonzalo-romero-3aa889262/" target="_blank" class="contact-link-item">
+                        <span class="fab fa-linkedin-in"></span>LinkedIn
+                    </a>
+                    
+                    <!-- Opción 3: Instagram -->
+                    <a href="https://www.instagram.com/gon.dellavedova/" target="_blank" class="contact-link-item">
+                        <span class="fab fa-instagram"></span>Instagram
+                    </a>
+                </section>
+
+                <!-- COLUMNA DERECHA: ESPACIO DE MENSAJE PERSONAL -->
+                <section class="personal-message-area">
+                    <h3>Un Mensaje Personal</h3>
+                    <p>Muchas gracias por llegar hasta acá, si querés contactarme te dejó las opciones a la izquierda.</p>
+                    <p>Fue un gusto hacer mi blog y espero que te haya interesado el aprender sobre mí.</p>
+                    <p style="text-align: right; margin-top: 30px; color: #00FFFF; font-weight: 700;">Saludos.</p>
+                </section>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="grid-container">
+            <section class="social-icons-footer">
+                <a href="https://www.instagram.com/gon.dellavedova/"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.linkedin.com/in/gonzalo-romero-3aa889262/"><span class="fab fa-linkedin-in"></span></a>
+            </section>
+            <p>&copy; 2025 Gonzalo Romero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

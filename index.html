@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Romero | Inicio</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Usamos FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Estilos específicos para esta página para asegurar el centrado del contenido -->
+    <style>
+        /* Estilos para centrar y estilizar el contenido de la portada */
+        .home-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 80px); /* Ajusta a la altura de la vista menos el footer */
+            text-align: center;
+            background-color: #1E1E1E; /* Fondo principal (Gris oscuro casi negro) */
+            padding: 50px 20px;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #292929; /* Color de contenedor secundario (como en Sobre Mí/Contacto) */
+            padding: 40px 50px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra sutil para destacarla */
+        }
+
+        /* Frase de arriba*/
+        .hero-slogan-text { 
+            font-size: 18px; 
+            color: #CCCCCC; 
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        /* Título Principal */
+        .hero-title {
+            font-family: 'Roboto Slab', serif;
+            font-size: 60px;
+            color: #00FFFF;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        .home-main-buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            width: 100%;
+            max-width: 350px; /* Ancho máximo para los botones */
+            padding: 0; 
+            background-color: transparent; /* Aseguramos que solo .hero-content tenga fondo */
+            border-radius: 10px;
+        }
+        
+        .hero-button {
+            /* Estilos de botón base */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00FFFF; /* Fondo Cian */
+            color: #1E1E1E; /* Texto Gris oscuro */
+            padding: 18px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+        }
+
+        .hero-button:hover {
+            background-color: #00DDEE;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
+        }
+
+        .main-button {
+            width: 100%;
+        }
+
+        /* Media Query para Escritorio */
+        @media (min-width: 768px) {
+            .hero-content {
+                /* Más padding en escritorio */
+                padding: 60px 80px; 
+            }
+            .home-main-buttons-container {
+                flex-direction: row; /* Botones en fila en escritorio */
+                max-width: 900px;
+                background-color: transparent; 
+                gap: 20px;
+            }
+
+            .main-button {
+                width: 250px; /* Ancho fijo para botones grandes */
+                padding: 18px 25px;
+            }
+
+            .hero-title {
+                font-size: 78px;
+            }
+            .hero-slogan-text { 
+                font-size: 22px; 
+            }
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="grid-container">
+            <nav>
+                <section class="nav-logo-container">
+                    <a href="/index.html">GONZALO ROMERO</a>
+                </section>
+                <section class="menu-links">
+                    <a href="/index.html" style="color: #00FFFF; border-bottom: 2px solid #00FFFF;">Inicio</a>
+                    <a href="/experiencia.html">Experiencia</a>
+                    <a href="/sobreMi.html">Sobre Mí</a>
+                    <a href="/contacto.html">Contacto</a>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <div class="grid-container hero-content">
+            <!-- Frase con los colores y clases de fuente combinados -->
+            <p class="hero-slogan-text">
+                <span class="titulo-secundario-cian">"Los tiempos</span>
+                <span class="titulo-secundario-amarillo">de Dios</span>
+                <span class="titulo-secundario-cian">son perfectos"</span>
+            </p>
+            
+            <h1 class="hero-title">¿Qué querés ver?</h1>
+            
+            <div class="home-main-buttons-container">
+                <!-- Botón 1: Sobre Mí -->
+                <a class="hero-button main-button" href="/sobreMi.html">
+                    <span class="fas fa-user-circle" style="margin-right: 10px;"></span>
+                    Sobre Mí
+                </a>
+                <!-- Botón 2: Experiencia -->
+                <a class="hero-button main-button" href="/experiencia.html">
+                    <span class="fas fa-briefcase" style="margin-right: 10px;"></span>
+                    Mi Experiencia
+                </a>
+                <!-- Botón 3: Contacto -->
+                <a class="hero-button main-button" href="/contacto.html">
+                    <span class="fas fa-envelope" style="margin-right: 10px;"></span>
+                    Contacto
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="grid-container">
+            <section class="social-icons-footer">
+                <a href="https://www.instagram.com/gon.dellavedova/"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.linkedin.com/in/gonzalo-romero-3aa889262/"><span class="fab fa-linkedin-in"></span></a>
+            </section>
+            <p>&copy; 2025 Gonzalo Romero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

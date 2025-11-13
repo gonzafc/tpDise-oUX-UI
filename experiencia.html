@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Romero | Experiencia</title>
+    <!-- Usamos el archivo de estilos principal -->
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <!-- Usamos FontAwesome para los íconos sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Estilos específicos para esta página -->
+    <style>
+        .experience-main {
+            padding: 50px 0;
+            min-height: 80vh;
+        }
+        .experience-section {
+            margin-bottom: 60px;
+        }
+        .section-title-exp {
+            font-family: 'Roboto Slab', serif;
+            font-size: 38px;
+            color: #00FFFF;
+            border-bottom: 2px solid #292929;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+        .timeline-item {
+            background-color: #292929;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 5px solid #00FFFF;
+            transition: background-color 0.3s;
+        }
+        .timeline-item:hover {
+            background-color: #333333;
+        }
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .timeline-title {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .timeline-date {
+            color: #AAAAAA;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .timeline-subtitle {
+            color: #00FFFF;
+            font-size: 18px;
+            margin: 5px 0 15px 0;
+            font-weight: 400;
+        }
+        .timeline-details ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .timeline-details ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: #CCCCCC;
+        }
+        .timeline-details ul li::before {
+            content: "\f058"; 
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #00FFFF;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="grid-container">
+            <nav>
+                <section class="nav-logo-container">
+                    <a href="/index.html">GONZALO ROMERO</a>
+                </section>
+                <section class="menu-links">
+                    <a href="/index.html">Inicio</a>
+                    <a href="/experiencia.html" style="color: #00FFFF; border-bottom: 2px solid #00FFFF;">Experiencia</a>
+                    <a href="/sobreMi.html">Sobre Mí</a>
+                    <a href="/contacto.html">Contacto</a>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    <main class="experience-main">
+        <div class="grid-container">
+            <h1 class="section-title-exp">Mi Trayectoria Laboral y Académica</h1>
+
+            <!-- SECCIÓN ACADÉMICA -->
+            <section class="experience-section">
+                <h2 style="color: #FFFFFF; font-size: 32px; margin-bottom: 25px;">Formación Académica <span class="fas fa-graduation-cap" style="color: #00FFFF;"></span></h2>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Licenciatura en Sistemas de Información</h3>
+                        <span class="timeline-date">2024 - Actualidad</span>
+                    </div>
+                    <p class="timeline-subtitle">Universidad Autónoma de Entre Ríos (UADER), Concepción del Uruguay</p>
+                    <div class="timeline-details">
+                        <p style="color: #CCCCCC;">Enfoque en desarrollo de software, y análisis de sistemas.</p>
+                        <ul>
+                            <li>Materias clave: Programación Orientada a Objetos, Matemática discreta, Diseño UX/UI.</li>
+                            <li>Habilidades desarrolladas: Resolución de problemas, lógica algorítmica y trabajo en equipo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Curso de Ciberseguridad</h3>
+                        <span class="timeline-date">2024</span>
+                    </div>
+                    <p class="timeline-subtitle">Por Google</p>
+                    <div class="timeline-details">
+                        <p style="color: #CCCCCC;">Curso otorgado por google que cubre fundamentos de seguridad ofensiva y defensiva.</p>
+                        <ul>
+                            <li>Módulos: Hacking ético, análisis de vulnerabilidades, protección de redes.</li>
+                        </ul>
+                    </div>
+                
+                    
+                </div>
+                                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Certificación First Cambridge Certificate</h3>
+                        <span class="timeline-date">2023</span>
+                    </div>
+                    <p class="timeline-subtitle">Cambridge</p>
+                    <div class="timeline-details">
+                        <p style="color: #CCCCCC;">Certificación B2 de inglés.</p>
+                    </div>
+                
+                    
+                </div>
+            </section>
+
+            <!-- SECCIÓN LABORAL -->
+            <section class="experience-section">
+                <h2 style="color: #FFFFFF; font-size: 32px; margin-bottom: 25px;">Experiencia Profesional <span class="fas fa-briefcase" style="color: #00FFFF;"></span></h2>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Asistente administrativo en taller mecánico</h3>
+                        <span class="timeline-date">2022 - 2024</span>
+                    </div>
+                    <p class="timeline-subtitle">"Huber Reparaciones"</p>
+                    <div class="timeline-details">
+                        <p style="color: #CCCCCC;">Organización de inventario, trato con proveedores, trato con clientes, manejo de activos.</p>
+                        <ul>
+                            <li>Uso de tecnologías: Excel, python (automatización).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    
+    <footer>
+        <div class="grid-container">
+            <section class="social-icons-footer">
+                <a href="https://www.instagram.com/gon.dellavedova/"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.linkedin.com/in/gonzalo-romero-3aa889262/"><span class="fab fa-linkedin-in"></span></a>
+            </section>
+            <p>&copy; 2025 Gonzalo Romero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

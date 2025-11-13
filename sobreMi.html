@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog personal - Gonzalo Romero</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .profile-main {
+            padding: 80px 0;
+        }
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        .profile-photo-container {
+            text-align: center;
+            background-color: #292929;
+            padding: 30px;
+            border-radius: 8px;
+            border-bottom: 5px solid #00FFFF;
+        }
+        .profile-photo {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid #00FFFF;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-info h1 {
+            color: #00FFFF;
+            font-size: 42px;
+            margin-top: 0;
+            border-bottom: 2px solid #292929;
+            padding-bottom: 15px;
+        }
+        .profile-info h3 {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            background-color: #00FFFF;
+            color: #1E1E1E;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="grid-container">
+            <nav>
+                <section class="nav-logo-container">
+                    <a href="/sobreMi.html">GONZALO ROMERO</a>
+                </section>
+                <section class="menu-links">
+                    <a href="/index.html">Inicio</a>
+                    <a href="/experiencia.html">Experiencia</a>
+                    <a href="/sobreMi.html" style="color: #00FFFF; border-bottom: 2px solid #00FFFF;">Sobre Mí</a>
+                    <a href="/contacto.html">Contacto</a>
+                </section>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-main">
+        <div class="grid-container profile-container">
+            
+            <section class="profile-photo-container">
+                <img src="/assets/yo2.png" alt="Foto" class="profile-photo">
+                <p style="font-size: 18px; font-weight: 700;">Gonzalo Romero</p>
+                <p style="color: #AAAAAA; margin-top: 5px;">Estudiante de Licenciatura en Sistemas.</p>
+            </section>
+
+            <section class="profile-info">
+                <h1>Sobre Mi</h1>
+                
+                <p>Actualmente estudio Lic. en Sistemas en UADER, Concepción del Uruguay, Entre Ríos.</p>
+                
+                <p>Me gusta programar, tengo experiencia en Python, C#, Javascript, Pascal. Por otro lado, me interesa mucho todo lo relacionado a la ciberseguridad, si bien no tengo experiencia en el rubro, he hecho cursos al respecto.</p>
+
+                <h3>Mis Intereses Clave</h3>
+                <ul class="skills-list">
+                    <li>Programación</li>
+                    <li>Inglés</li>
+                    <li>Ciberseguridad</li>
+                    <li>Fanático de los Redondos</li>
+                </ul>
+                <h3>Conéctate Conmigo</h3>
+                <p>Puedes contactarme vía correo por: romerogonzalo32@gmail.com</p>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="grid-container">
+            <section class="social-icons-footer">
+                <a href="https://www.instagram.com/gon.dellavedova/"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.linkedin.com/in/gonzalo-romero-3aa889262/"><span class="fab fa-linkedin-in"></span></a>
+            </section>
+             <p>&copy; 2025 Gonzalo Romero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
